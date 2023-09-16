@@ -1,4 +1,4 @@
-package com.entando.demoredis.Model;
+package com.entando.demoredis;
 
 import java.io.Serializable;
 

@@ -6,7 +6,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.entando.demoredis.Model.Student;
+import com.entando.demoredis.Student;
 import com.entando.demoredis.repository.StudentRepository;
 
 @Service

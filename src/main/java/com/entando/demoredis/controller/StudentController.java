@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.entando.demoredis.Model.Student;
+import com.entando.demoredis.Student;
 import com.entando.demoredis.service.StudentService;
 
 import org.slf4j.Logger;
