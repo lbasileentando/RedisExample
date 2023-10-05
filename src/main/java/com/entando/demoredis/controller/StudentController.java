@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.entando.demoredis.ApiRezult;
 import com.entando.demoredis.Student;
 import com.entando.demoredis.service.StudentService;
 
@@ -55,5 +56,13 @@ public class StudentController {
        studentService.deleteAll();
 
        return ResponseEntity.ok().body("everything cleaned!");
+    }
+
+    @GetMapping("/pippo")
+    ResponseEntity<ApiRezult> getRezult(){
+        ApiRezult rez = new ApiRezult();
+        rez.setResponse(studentService.getStudents());
+        
+        return ResponseEntity.ok().body(rez);
     }
 }
